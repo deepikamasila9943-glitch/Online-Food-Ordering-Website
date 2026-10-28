@@ -1,0 +1,141 @@
+/* General Page Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Website Header */
+header {
+    background-color: #e65100;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navigation Bar */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe0b2;
+}
+
+/* Main Sections */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #bf360c;
+    margin-bottom: 15px;
+}
+
+/* Search Input */
+input[type="text"] {
+    width: 100%;
+    max-width: 450px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Food Item Grid */
+#foodContainer {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Food Cards */
+.food-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #ddd;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+}
+
+.food-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Buttons */
+button {
+    background-color: #e65100;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #bf360c;
+}
+
+/* Shopping Cart */
+#cart {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #ddd;
+}
+
+#totalAmount {
+    color: #2e7d32;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    main {
+        padding: 12px;
+    }
